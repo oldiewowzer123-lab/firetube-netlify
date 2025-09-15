@@ -1,0 +1,80 @@
+/* General body style */
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #e63946;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#search {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Video list grid */
+#videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Video item */
+.video {
+  background: #222;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.video:hover {
+  transform: scale(1.05);
+}
+.video img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Modal overlay */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+/* Modal content box */
+.modal-content {
+  background: #111;
+  margin: 5% auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+/* Close button */
+#closeBtn {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
